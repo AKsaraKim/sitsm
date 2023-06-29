@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+html, body{width: 100%; height: 100%;}
+
+.wrapper{position: relative; height: inherit;}
+
+.bg_char{width: 100%; height: 100%; background-image: url(../images/char.svg); background-size: cover; animation: bounce_item 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;} 
+.bg_char_wrap{position: absolute; width: 307px; height: 283px; bottom:30px; left: 50%; margin-left: -153px; animation: bounce_move 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;}
+
+@keyframes bounce_move {
+    0% { transform:translateY(0%); }
+    20% { transform:translateY(0%); }
+    50% { transform:translateY(-30%); }
+    80% { transform:translateY(10%); }
+    100% { transform:translateY(0); }
+}
+
+@keyframes bounce_item {
+    from, to { transform: scale(1.1, 0.9); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.9, 1.1); }
+}
