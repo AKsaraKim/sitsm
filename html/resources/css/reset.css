@@ -51,7 +51,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #666;
+  color: #333;
   text-align: left;
   background-color: #fff;
 }
@@ -151,6 +151,7 @@ a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 a:hover {

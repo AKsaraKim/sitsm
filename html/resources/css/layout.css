@@ -64,8 +64,26 @@ button.bsc{background-color: #5e7083; border: 1px solid #5e7083; color: #fff; di
 
 .main-sidebar{height: 100vh;min-height: 100%; position: absolute;top: 0; box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22); background-color: #001224; width: 80px; transition: 0.3s all;}
 
-.contents_wrap{position: relative; margin-left: 80px; height: 100%; background-color: rgba(0,0,0,.03); transition: 0.3s all; padding:64px 0 0 28px;}
+.contents_wrap{position: relative; margin-left: 80px; height: 100%; background-color: rgba(0,0,0,.03); transition: 0.3s all; padding:64px 0 0 28px; overflow-y: auto;}
 
 
 /* dashboard */
 
+.dashboard_wrap{display: flex; gap:8px; margin: 0 0 16px -28px; padding: 0 28px 28px; border-bottom: 1px solid #cccccc;}
+.dashboard_wrap .item{flex:1; border: 1px solid #999999; background-color: #fff; border-radius: 12px; padding: 12px; box-shadow: 0 3px 5px rgba(0,0,0,.1);}
+.dashboard_wrap .item span{display: block; text-align: center;}
+.dashboard_wrap .item span.tit{font-size: 14px;}
+.dashboard_wrap .item span.sub{font-size: 22px; font-family: OneShinhanB}
+
+
+.board_list > ul{display: block; }
+.board_list > ul > li{border-bottom: 1px solid #ccc; }
+.board_list > ul > li > a{display: block; padding:20px 12px; color: #666;}
+.board_list > ul > li > a:hover{background-color: #eeeeee;}
+.board_list > ul > li > a:first-child{border-top:none;}
+.board_list > ul > li > a > .num{width: 30px; text-align: center;}
+.board_list > ul > li > a.item_rep{margin: 0 28px 20px 42px; border-radius: 12px; background-color: #eeeeee;}
+.board_list .item .sts_box{display: flex;}
+.board_list .item .tit{font-size: 18px; color: #333;}
+
+.board_list .sel_frm .tit{display: none;}
