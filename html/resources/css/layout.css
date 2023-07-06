@@ -78,11 +78,12 @@ button.bsc{background-color: #5e7083; border: 1px solid #5e7083; color: #fff; di
 
 .board_list > ul{display: block; }
 .board_list > ul > li{border-bottom: 1px solid #ccc; }
-.board_list > ul > li > a{display: block; padding:20px 12px; color: #666;}
-.board_list > ul > li > a:hover{background-color: #eeeeee;}
+.board_list > ul > li > a{display: block; padding:20px 12px; color: #333; transition: all 0.2s;}
+.board_list > ul > li > a:hover{background-color: #e6f2ff;}
 .board_list > ul > li > a:first-child{border-top:none;}
-.board_list > ul > li > a > .num{width: 30px; text-align: center;}
+.board_list > ul > li > a .num{width: 30px; text-align: center;}
 .board_list > ul > li > a.item_rep{margin: 0 28px 20px 42px; border-radius: 12px; background-color: #eeeeee;}
+.board_list > ul > li > a.item_rep:hover{background-color: #e6f2ff;}
 .board_list .item .sts_box{display: flex;}
 .board_list .item .tit{font-size: 18px; color: #333;}
 
